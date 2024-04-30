@@ -1,5 +1,6 @@
 :root {
   --blue: dodgerblue;
+  --light-blue: rgb(192, 225, 255);
 }
 
 * {
@@ -48,10 +49,20 @@ a {
   border-radius: 5rem;
   border-color: var(--blue);
   border-style: solid;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 a:visited {
   color: var(--blue);
+}
+
+a:hover {
+  background-color: var(--light-blue);
+}
+
+a:active {
+  color: white;
+  background-color: var(--blue);
 }
 
 header img {
@@ -83,6 +94,75 @@ footer h2 {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-device-width: 768px) {
+.desktop-header {
+  display: none;
+}
 
+@media screen and (min-device-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  body {
+    padding: 0;
+    gap: 10rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  header {
+    margin-top: 6rem;
+  }
+
+  .desktop-header-left {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .desktop-header-right {
+    width: 25vw;
+  }
+
+  header img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  a {
+    width: 15vw;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-width: 0.2rem;
+  }
+
+  footer p {
+    margin: 1.5rem 0;
+    font-size: 1.25rem;
+  }
 }
