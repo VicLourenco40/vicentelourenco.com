@@ -1,0 +1,88 @@
+:root {
+  --blue: dodgerblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  padding: 0 5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 7rem 0;
+  font-size: 5rem;
+  color: var(--blue);
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--blue);
+}
+
+p {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+b {
+  color: var(--blue);
+}
+
+a {
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--blue);
+  background-color: white;
+  border-width: 0.4rem;
+  border-radius: 5rem;
+  border-color: var(--blue);
+  border-style: solid;
+}
+
+a:visited {
+  color: var(--blue);
+}
+
+header img {
+  width: 60vw;
+  margin-bottom: 4rem;
+  border-radius: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+footer p {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: darkgray;
+}
+
+footer h2 {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-device-width: 768px) {
+
+}
