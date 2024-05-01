@@ -1,0 +1,45 @@
+header h1 {
+  margin-bottom: 2rem;
+}
+
+.contacts {
+  font-size: 1.1rem;
+}
+
+.contacts i {
+  margin-right: 0.5rem;
+}
+
+.contacts p {
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.email-form {
+  width: 90%;
+}
+
+form {
+  width: 100%;
+}
+
+form label {
+  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.form-button {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 4rem;
+}

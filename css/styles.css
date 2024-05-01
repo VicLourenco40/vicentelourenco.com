@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
 :root {
   --color-important: dodgerblue;
   --color-hover: rgb(192, 225, 255);
@@ -5,67 +11,29 @@
   --color-background: white;
 }
 
-body {
+.flex-column-center {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  align-items: center;
+}
+
+body {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   background-color: var(--color-background);
 }
 
-h1, h2, b, a {
-  font-weight: bold;
-  color: var(--color-important);
-}
-
-h1 {
-  margin: 0;
-}
-
-img {
-  width: 75%;
-  height: auto;
-  border-radius: 100%;
-}
-
-a {
-  width: 90%;
-  padding: 0.5rem;
-  border-width: 0.2rem;
-  border-radius: 2rem;
-  border-style: solid;
-  border-color: var(--color-important);
-  text-decoration: none;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-a:hover {
-  background-color: var(--color-hover);
-}
-
-a:active {
-  color: var(--color-background);
-  background-color: var(--color-important);
-}
-
 header {
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  margin-top: 2rem;
 }
 
-header p {
-  margin: 0;
+main {
+  width: 100%;
+  gap: 4rem;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+main h2 {
+  margin-bottom: 2rem
 }
 
 footer h2 {
@@ -76,8 +44,62 @@ footer p {
   color: var(--color-faded);
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+h1, h2, h3, b, a, label, .form-button, .bi {
+  font-weight: bold;
+  color: var(--color-important);
+}
+
+a, input, textarea {
+  padding: 0.5rem;
+  border-width: 0.2rem;
+  border-radius: 1.4rem;
+  border-style: solid;
+  border-color: var(--color-important);
+  background-color: var(--color-background);
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+a {
+  width: 90%;
+}
+
+a:hover, input:hover, textarea:hover {
+  background-color: var(--color-hover);
+}
+
+a:active {
+  color: var(--color-background);
+  background-color: var(--color-important);
+}
+
+.form-button:active {
+  color: var(--color-background);
+  background-color: var(--color-important);
+}
+
+textarea {
+  resize: none;
+}
+
+.button {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 1.25rem;
+}
+
+#button-home {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+#button-top {
+  visibility: hidden;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
