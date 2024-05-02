@@ -1,0 +1,24 @@
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 2rem;
+}
+
+header h2 {
+  margin: 0;
+}
+
+main {
+  margin-bottom: 4rem;
+  gap: 3rem;
+}
+
+section h3 {
+  margin-bottom: 1rem;
+}
+
+section .grid {
+  width: 90%;
+}

@@ -2,25 +2,29 @@ header h1 {
   margin-bottom: 2rem;
 }
 
-.contacts {
-  font-size: 1.1rem;
+main {
+  gap: 3rem;
+  margin-bottom: 4rem;
 }
 
-.contacts i {
+section h2 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+li i {
   margin-right: 0.5rem;
 }
 
-.contacts p {
-  width: fit-content;
-  margin-bottom: 0.5rem;
-}
-
-.email-form {
-  width: 90%;
-}
-
 form {
-  width: 100%;
+  width: 90%;
 }
 
 form label {
@@ -38,8 +42,4 @@ form input, form textarea {
 .form-button {
   width: 50%;
   margin-bottom: 0;
-}
-
-footer {
-  margin-top: 4rem;
 }

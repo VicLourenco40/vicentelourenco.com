@@ -11,6 +11,10 @@
   --color-background: white;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 .flex-column-center {
   display: flex;
   flex-direction: column;
@@ -29,11 +33,15 @@ header {
 
 main {
   width: 100%;
-  gap: 4rem;
 }
 
-main h2 {
-  margin-bottom: 2rem
+section {
+  width: 100%;
+}
+
+footer {
+  flex: 1;
+  justify-content: end;
 }
 
 footer h2 {
@@ -102,4 +110,44 @@ textarea {
   visibility: hidden;
   bottom: 0.5rem;
   right: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: min-content auto;
+  column-gap: 1rem;
+}
+
+.grid p {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.bar-outer {
+  height: fit-content;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: var(--color-important);
+  background-color: var(--color-important);
+}
+
+.bar-inner {
+  height: 1.1rem;
+  background-color: var(--color-hover);
+  border-radius: 1rem;
+}
+
+ul {
+  padding: 0;
+  width: fit-content;
+}
+
+li {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+li::marker {
+  color: var(--color-important);
 }
