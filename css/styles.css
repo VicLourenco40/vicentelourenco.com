@@ -5,9 +5,10 @@
 }
 
 :root {
-  --color-important: dodgerblue;
-  --color-hover: rgb(192, 225, 255);
-  --color-faded: darkgray;
+  --color-text: white;
+  --color-text-light: darkgray;
+  --color-main: dodgerblue;
+  --color-light: rgb(192, 225, 255);
   --color-background: white;
 }
 
@@ -49,12 +50,12 @@ footer h2 {
 }
 
 footer p {
-  color: var(--color-faded);
+  color: var(--color-text-light);
 }
 
 h1, h2, h3, b, a, label, .form-button, .bi {
   font-weight: bold;
-  color: var(--color-important);
+  color: var(--color-main);
 }
 
 a, input, textarea {
@@ -62,7 +63,7 @@ a, input, textarea {
   border-width: 0.2rem;
   border-radius: 1.4rem;
   border-style: solid;
-  border-color: var(--color-important);
+  border-color: var(--color-main);
   background-color: var(--color-background);
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s;
@@ -73,17 +74,17 @@ a {
 }
 
 a:hover, input:hover, textarea:hover {
-  background-color: var(--color-hover);
+  background-color: var(--color-light);
 }
 
 a:active {
   color: var(--color-background);
-  background-color: var(--color-important);
+  background-color: var(--color-main);
 }
 
 .form-button:active {
   color: var(--color-background);
-  background-color: var(--color-important);
+  background-color: var(--color-main);
 }
 
 textarea {
@@ -128,13 +129,13 @@ textarea {
   border-radius: 1rem;
   border-style: solid;
   border-width: 0.25rem;
-  border-color: var(--color-important);
-  background-color: var(--color-important);
+  border-color: var(--color-main);
+  background-color: var(--color-main);
 }
 
 .bar-inner {
   height: 1.1rem;
-  background-color: var(--color-hover);
+  background-color: var(--color-light);
   border-radius: 1rem;
 }
 
@@ -149,5 +150,5 @@ li {
 }
 
 li::marker {
-  color: var(--color-important);
+  color: var(--color-main);
 }
