@@ -27,7 +27,6 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--color-text);
   background-color: var(--color-background);
-  transition: color 0.3s, background-color 0.3s;
 }
 
 header {
@@ -40,19 +39,6 @@ main {
 
 section {
   width: 100%;
-}
-
-footer {
-  flex: 1;
-  justify-content: end;
-}
-
-footer h2 {
-  margin-bottom: 4rem;
-}
-
-footer p {
-  color: var(--color-text-light);
 }
 
 h1, h2, h3, b, a, label, .form-button, .bi {
@@ -68,7 +54,6 @@ a, input, textarea {
   border-color: var(--color-main);
   background-color: var(--color-background);
   text-decoration: none;
-  transition: color 0.3s, background-color 0.3s;
 }
 
 a {
@@ -90,7 +75,6 @@ a:active {
 
 a:active i {
   color: var(--color-background);
-  transition: color 0.3s;
 }
 
 .form-button:active {
@@ -149,7 +133,6 @@ textarea {
   height: 1.1rem;
   background-color: var(--color-light);
   border-radius: 1rem;
-  transition: background-color 0.3s;
 }
 
 ul {
@@ -181,5 +164,49 @@ li::marker {
 }
 
 #button-dark-mode i {
+  color: var(--color-text-light);
+}
+
+footer {
+  width: 100%;
+  flex: 1;
+  justify-content: end;
+}
+
+footer h2 {
+  margin-bottom: 4rem;
+}
+
+footer p {
+  color: var(--color-text-light);
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.github {
+  width: auto;
+  padding: 0;
+  border: none;
+  font-weight: normal;
+  color: var(--color-text-light);
+  background-color: transparent;
+}
+
+.github:hover {
+  background-color: transparent;
+}
+
+.github:active {
+  color: var(--color-text-light);
+  background-color: transparent;
+}
+
+.github .bi {
   color: var(--color-text-light);
 }
