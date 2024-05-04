@@ -51,6 +51,9 @@ if (darkMode == true) {
     switchDarkMode();
 }
 
+// Without this timeout, the transitions will re-enable
+// before the colors have time to change, resulting in a
+// "flash" when switching pages if the user has dark mode enabled
 setTimeout(function () {
     setTransitions('color 0.3s, background-color 0.3s');
 }, 0);
