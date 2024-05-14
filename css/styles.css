@@ -7,6 +7,7 @@
 :root {
   --color-text: black;
   --color-text-light: darkgray;
+  --color-text-warning: red;
   --color-main: dodgerblue;
   --color-light: rgb(192, 225, 255);
   --color-background: white;
@@ -171,6 +172,13 @@ li i {
 
 li::marker {
   color: var(--color-main);
+}
+
+.warning {
+  display: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-text-warning);
 }
 
 form label {

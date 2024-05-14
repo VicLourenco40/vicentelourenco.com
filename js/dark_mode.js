@@ -40,7 +40,7 @@ function setTransitions(transition) {
 
 buttonDarkMode.addEventListener('click', function() {
     darkMode = !darkMode;
-    document.cookie = 'darkMode=' + darkMode.toString() + "; path=/";
+    document.cookie = 'darkMode=' + darkMode.toString() + "; expires=Wed, 31 Dec 2034 23:59:59 GMT; path=/";
     switchDarkMode();
 });
 

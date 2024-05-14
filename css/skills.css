@@ -1,0 +1,10 @@
+@keyframes bar-grow {
+  to { width: 5% }
+}
+
+.bar-inner {
+  animation-name: bar-grow;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.25s;
+}
